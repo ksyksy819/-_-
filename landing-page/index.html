@@ -1,22 +1,480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="정답률이 아닌 사고의 흔적을 분석하는 메타인지·질문력 성장 시스템" />
-    <meta name="keywords" content="LQS, Learning Quality System, 메타인지, 질문력, AI 학습, 사고 분석" />
-    <meta property="og:title" content="LQS - Learning Quality System" />
-    <meta property="og:description" content="정답률이 아닌 사고의 흔적을 분석하는 메타인지·질문력 성장 시스템" />
-    <meta property="og:type" content="website" />
-    <title>LQS - Learning Quality System</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GradeFlow - AI 기반 PDF 시험 채점·피드백 자동화 서비스. 기존 시험지 그대로, AI가 자동 채점 초안 생성">
+  <meta name="keywords" content="AI 채점, 시험 자동화, 교육 기술, EdTech, 생활기록부, 누가기록">
+  <meta name="author" content="GradeFlow Team">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="GradeFlow - AI 기반 시험 채점 자동화">
+  <meta property="og:description" content="시험지는 그대로, 채점은 AI가. 교사의 평가 업무를 혁신합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ksyksy819.github.io/-_-/">
+  
+  <title>GradeFlow - AI 기반 PDF 시험 채점·피드백 자동화</title>
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <span class="logo-icon">📝</span>
+          <span>GradeFlow</span>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="#pain-points" class="nav-link">문제</a></li>
+          <li><a href="#how-it-works" class="nav-link">작동 방식</a></li>
+          <li><a href="#features" class="nav-link">기능</a></li>
+          <li><a href="#why-us" class="nav-link">차별점</a></li>
+        </ul>
+        
+        <div class="nav-cta">
+          <a href="https://github.com/ksyksy819/-_-" target="_blank" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="#cta" class="btn btn-primary">시작하기</a>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="메뉴">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text scroll-animate">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>AI 기반 교육 혁신</span>
+            </div>
+            
+            <h1 class="hero-title">
+              채점 시간을<br>
+              <span class="hero-title-highlight">90% 줄이는</span><br>
+              AI 교육 도우미
+            </h1>
+            
+            <p class="hero-description">
+              기존 PDF 시험지를 재제작 없이 그대로 사용하세요.
+              AI가 답칸 탐지부터 채점 초안, 생활기록부 문장 생성까지 자동화합니다.
+            </p>
+            
+            <div class="hero-buttons">
+              <a href="#cta" class="btn btn-large hero-btn-primary">
+                무료로 시작하기
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="#how-it-works" class="btn btn-large hero-btn-secondary">
+                작동 방식 보기
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-visual scroll-animate stagger-2">
+            <div class="hero-image-wrapper">
+              <div class="hero-image">
+                <div class="hero-mockup">
+                  <div class="mockup-header">
+                    <span class="mockup-dot red"></span>
+                    <span class="mockup-dot yellow"></span>
+                    <span class="mockup-dot green"></span>
+                  </div>
+                  <div class="mockup-content">
+                    <div class="mockup-line short"></div>
+                    <div class="mockup-line long"></div>
+                    <div class="mockup-line medium"></div>
+                    <div class="mockup-box">
+                      🎯 AI가 탐지한 답칸 영역
+                    </div>
+                    <div class="mockup-line long"></div>
+                    <div class="mockup-box">
+                      ✍️ 학생 필기 입력 영역
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hero-floating-card card-1">
+              <div class="floating-card-icon">✅</div>
+              <div class="floating-card-text">자동 채점 완료</div>
+              <div class="floating-card-subtext">32명 / 32명</div>
+            </div>
+            
+            <div class="hero-floating-card card-2">
+              <div class="floating-card-icon">📊</div>
+              <div class="floating-card-text">평균 점수</div>
+              <div class="floating-card-subtext">잘함 (85%)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section id="pain-points" class="section pain-points">
+      <div class="container">
+        <div class="section-header scroll-animate">
+          <h2 class="section-title">교사가 겪는 고통</h2>
+          <p class="section-subtitle">평가 후 채점과 기록에 쏟는 시간, 이제 줄일 수 있습니다</p>
+        </div>
+        
+        <div class="pain-grid">
+          <div class="pain-card scroll-animate stagger-1">
+            <div class="pain-icon">⏰</div>
+            <h3 class="pain-title">끝없는 채점 시간</h3>
+            <p class="pain-description">
+              시험 한 번에 수십 명의 답안을 일일이 확인하고 점수를 매기는 반복 작업
+            </p>
+          </div>
+          
+          <div class="pain-card scroll-animate stagger-2">
+            <div class="pain-icon">📝</div>
+            <h3 class="pain-title">생활기록부 작성 부담</h3>
+            <p class="pain-description">
+              학생별 성취도를 분석하고 적절한 문장으로 기록하는 데 소요되는 시간
+            </p>
+          </div>
+          
+          <div class="pain-card scroll-animate stagger-3">
+            <div class="pain-icon">🔄</div>
+            <h3 class="pain-title">반복적인 수작업</h3>
+            <p class="pain-description">
+              같은 유형의 답안을 반복해서 채점하고, 유사한 피드백을 계속 작성
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section how-it-works">
+      <div class="container">
+        <div class="section-header scroll-animate">
+          <h2 class="section-title">3단계로 간단하게</h2>
+          <p class="section-subtitle">기존 시험지 그대로, AI가 채점을 도와드립니다</p>
+        </div>
+        
+        <div class="steps-container">
+          <div class="step scroll-animate stagger-1">
+            <div class="step-number">📤</div>
+            <h3 class="step-title">1. 업로드</h3>
+            <p class="step-description">
+              기존 PDF 시험지를 그대로 업로드하세요. 재제작 필요 없습니다.
+            </p>
+          </div>
+          
+          <div class="step scroll-animate stagger-2">
+            <div class="step-number">🤖</div>
+            <h3 class="step-title">2. AI 분석</h3>
+            <p class="step-description">
+              AI가 자동으로 답칸을 탐지하고 채점 초안을 생성합니다.
+            </p>
+          </div>
+          
+          <div class="step scroll-animate stagger-3">
+            <div class="step-number">✅</div>
+            <h3 class="step-title">3. 확정</h3>
+            <p class="step-description">
+              교사가 검토하고 승인만 하면 끝. 필요시 수정도 가능합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+      <div class="container">
+        <div class="section-header scroll-animate">
+          <h2 class="section-title">핵심 기능</h2>
+          <p class="section-subtitle">교사와 학생 모두를 위한 스마트한 기능들</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card scroll-animate stagger-1">
+            <div class="feature-icon">🎯</div>
+            <h3 class="feature-title">AI 답칸 자동 탐지</h3>
+            <p class="feature-description">
+              PDF에서 빈칸, 줄, 표를 자동으로 분석하여 답안 입력 영역을 제안합니다.
+            </p>
+          </div>
+          
+          <div class="feature-card scroll-animate stagger-2">
+            <div class="feature-icon">✍️</div>
+            <h3 class="feature-title">손글씨 인식 채점</h3>
+            <p class="feature-description">
+              학생의 필기 이미지를 분석하여 점수와 근거를 포함한 초안을 생성합니다.
+            </p>
+          </div>
+          
+          <div class="feature-card scroll-animate stagger-3">
+            <div class="feature-icon">📊</div>
+            <h3 class="feature-title">4수준 평가 체계</h3>
+            <p class="feature-description">
+              초등 교육에 맞는 매우잘함/잘함/보통/노력요함 평가 기준을 지원합니다.
+            </p>
+          </div>
+          
+          <div class="feature-card scroll-animate stagger-4">
+            <div class="feature-icon">📝</div>
+            <h3 class="feature-title">누가기록 자동 생성</h3>
+            <p class="feature-description">
+              성취기준과 평가 결과를 바탕으로 생활기록부 문장을 자동 생성합니다.
+            </p>
+          </div>
+          
+          <div class="feature-card scroll-animate stagger-5">
+            <div class="feature-icon">🔄</div>
+            <h3 class="feature-title">실시간 자동 저장</h3>
+            <p class="feature-description">
+              5초 단위로 자동 저장되고, 오프라인에서도 작업이 유지됩니다.
+            </p>
+          </div>
+          
+          <div class="feature-card scroll-animate stagger-6">
+            <div class="feature-icon">👀</div>
+            <h3 class="feature-title">실시간 현황 모니터링</h3>
+            <p class="feature-description">
+              학생들의 접속, 작성 중, 제출 상태를 실시간으로 확인할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Flow Section -->
+    <section id="user-flow" class="section user-flow">
+      <div class="container">
+        <div class="section-header scroll-animate">
+          <h2 class="section-title">사용자 여정</h2>
+          <p class="section-subtitle">교사와 학생 각각의 간편한 워크플로우</p>
+        </div>
+        
+        <div class="flow-tabs scroll-animate">
+          <button class="flow-tab active" data-tab="flow-teacher">👨‍🏫 교사</button>
+          <button class="flow-tab" data-tab="flow-student">👨‍🎓 학생</button>
+        </div>
+        
+        <div id="flow-teacher" class="flow-content active scroll-animate">
+          <div class="flow-steps">
+            <div class="flow-step">
+              <div class="flow-step-icon">📋</div>
+              <span class="flow-step-text">시험 생성</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">📤</div>
+              <span class="flow-step-text">PDF 업로드</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">🎯</div>
+              <span class="flow-step-text">AI 박스 확인</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">🔗</div>
+              <span class="flow-step-text">배포</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">👀</div>
+              <span class="flow-step-text">모니터링</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">✅</div>
+              <span class="flow-step-text">채점 확정</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">📊</div>
+              <span class="flow-step-text">기록 내보내기</span>
+            </div>
+          </div>
+        </div>
+        
+        <div id="flow-student" class="flow-content scroll-animate">
+          <div class="flow-steps">
+            <div class="flow-step">
+              <div class="flow-step-icon">📱</div>
+              <span class="flow-step-text">QR/코드 접속</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">🏠</div>
+              <span class="flow-step-text">자기 페이지</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">📝</div>
+              <span class="flow-step-text">시험 응시</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">📤</div>
+              <span class="flow-step-text">제출</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step">
+              <div class="flow-step-icon">💬</div>
+              <span class="flow-step-text">피드백 확인</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us">
+      <div class="container">
+        <div class="section-header scroll-animate">
+          <h2 class="section-title">왜 GradeFlow인가요?</h2>
+          <p class="section-subtitle">다른 서비스와 차별화되는 핵심 가치</p>
+        </div>
+        
+        <div class="why-grid">
+          <div class="why-card scroll-animate stagger-1">
+            <div class="why-icon">📄</div>
+            <h3 class="why-title">기존 시험지 그대로</h3>
+            <p class="why-description">
+              이미 만들어둔 PDF 시험지를 재제작 없이 바로 사용할 수 있습니다. 
+              새로운 형식을 배울 필요가 없습니다.
+            </p>
+          </div>
+          
+          <div class="why-card scroll-animate stagger-2">
+            <div class="why-icon">🤝</div>
+            <h3 class="why-title">AI 초안 + 교사 확정</h3>
+            <p class="why-description">
+              완전 자동이 아닌, AI가 초안을 만들고 교사가 최종 확정합니다. 
+              신뢰성과 효율성 모두 확보합니다.
+            </p>
+          </div>
+          
+          <div class="why-card scroll-animate stagger-3">
+            <div class="why-icon">🔒</div>
+            <h3 class="why-title">철저한 보안</h3>
+            <p class="why-description">
+              학생별 고유 코드로 자기 페이지만 접근 가능. 
+              타인의 시험지나 성적은 절대 볼 수 없습니다.
+            </p>
+          </div>
+          
+          <div class="why-card scroll-animate stagger-4">
+            <div class="why-icon">📶</div>
+            <h3 class="why-title">오프라인도 안심</h3>
+            <p class="why-description">
+              인터넷이 끊겨도 작업 내용이 보존됩니다. 
+              재접속 시 자동으로 동기화됩니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="section cta-section">
+      <div class="container">
+        <div class="cta-box scroll-animate">
+          <h2 class="cta-title">지금 바로 시작하세요</h2>
+          <p class="cta-description">
+            채점에 쏟던 시간을 학생과의 소통에 투자하세요.
+            GradeFlow가 교사의 업무를 혁신합니다.
+          </p>
+          <div class="cta-buttons">
+            <a href="https://github.com/ksyksy819/-_-" target="_blank" class="btn btn-large cta-btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub에서 보기
+            </a>
+            <a href="mailto:contact@gradeflow.io" class="btn btn-large cta-btn-secondary">
+              문의하기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>📝</span>
+            <span>GradeFlow</span>
+          </div>
+          <p class="footer-description">
+            AI 기반 PDF 시험 채점·피드백·누가기록 자동화 서비스. 
+            교사의 평가 업무를 혁신합니다.
+          </p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>제품</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">기능</a></li>
+            <li><a href="#how-it-works" class="footer-link">작동 방식</a></li>
+            <li><a href="#why-us" class="footer-link">차별점</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>리소스</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/ksyksy819/-_-" target="_blank" class="footer-link">GitHub</a></li>
+            <li><a href="#" class="footer-link">문서</a></li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>연락처</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:contact@gradeflow.io" class="footer-link">이메일</a></li>
+            <li><a href="#" class="footer-link">피드백</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2024 GradeFlow. 트레바리 바이브코딩 프로젝트.
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/ksyksy819/-_-" target="_blank" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
